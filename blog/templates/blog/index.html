@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block page_title %}
+    My Blog
+{% endblock %}
+
+{% block content %}
+    <section class="welcome">
+        <header>
+            <img src="{% static "blog/images/max.png" %}" alt="Jordi - The author of this blog">
+            <h2>JORDI'S BLOG</h2>
+        </header>
+        <p>Hi, this is Jordi and I love to blog about my hobbies!</p>
+    </section>
+
+    <section class="latest-posts">
+        <h2>My Latests Thoughts</h2>
+
+        <ul>
+            {% for post in posts %}
+            	{% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="about">
+        <h2>What I Do</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis dolor exercitationem nobis
+            officia! Debitis dignissimos excepturi incidunt inventore ipsum labore necessitatibus nobis omnis, pariatur
+            perspiciatis quam quasi tempore ut.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi assumenda eos, fugit ipsam laudantium
+            necessitatibus nesciunt nihil nisi nobis quo repellendus voluptatem voluptatibus? At autem ducimus facere
+            nisi quidem.</p>
+    </section>
+{% endblock %}

@@ -1,0 +1,61 @@
+# Python related
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django related
+*.log
+db.sqlite3
+
+# Environment related
+.env
+.venv
+venv/
+
+# OS related
+.DS_Store
+
+# IDE related
+.idea/
+
+# If you're using pytest for testing, you might want to ignore its cache:
+.pytest_cache/
+
+# If you're using Jupyter notebooks:
+.ipynb_checkpoints/
+
+# If you're using virtualenv:
+*.pyenv
+
+# If you're using Mac, Linux, or Windows, you might want to ignore system files:
+*.swp
+*~
+*.bak
+*.tmp
+*#
+.#*
+Thumbs.db
+Desktop.ini
+
+# If you're using other IDEs or text editors, you might want to ignore their settings:
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.sln.ide/
+
+# If you're using Docker, you might want to ignore its files:
+Dockerfile
+.dockerignore
+.docker/
+
+# If you're using Heroku, you might want to ignore its files:
+Procfile
+*.slugignore
+*.env.staging
+*.env.production
+*.env.local
